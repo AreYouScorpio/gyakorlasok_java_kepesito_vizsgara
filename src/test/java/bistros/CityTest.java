@@ -8,7 +8,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CityTest {
-
+/*
     City city = new City();
 
     @BeforeEach
@@ -93,4 +93,6 @@ class CityTest {
 
     }
 
+
+ */
 }

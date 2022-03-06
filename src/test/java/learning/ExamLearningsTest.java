@@ -8,7 +8,7 @@ import java.nio.file.Paths;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ExamLearningsTest {
-
+/*
     ExamLearnings examLearnings;
 
     @BeforeEach
@@ -44,4 +44,6 @@ class ExamLearningsTest {
                 () -> examLearnings.getAverageLearningInMinutes());
         assertEquals("There are no learning times.", ex.getMessage());
     }
+
+ */
 }
