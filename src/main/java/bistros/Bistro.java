@@ -2,6 +2,7 @@ package bistros;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Bistro {
     protected String name;
@@ -16,10 +17,6 @@ public class Bistro {
 
 
 
-
-
-
-
     public String getName() {
         return name;
     }
@@ -29,11 +26,23 @@ public class Bistro {
     }
 
     public List<MenuItem> getMenu() {
-        return menuItems;
+        return new ArrayList<>(menuItems);
     }
 
     public void addMenuItem(MenuItem menuItem) {
         menuItems.add(menuItem);
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Bistro)) return false;
+        Bistro bistro = (Bistro) o;
+        return Objects.equals(name, bistro.name) && Objects.equals(address, bistro.address);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, address);
+    }
 }

@@ -18,7 +18,7 @@ class BistroTest {
         assertTrue(bistro.getMenu().isEmpty());
     }
 
-/*
+
     @Test
     void addMenuItemTest() {
         Bistro bistro = new Bistro("Best Bistro", new Address("Kossuth", 17));
@@ -44,5 +44,5 @@ class BistroTest {
     }
 
 
- */
+
 }
