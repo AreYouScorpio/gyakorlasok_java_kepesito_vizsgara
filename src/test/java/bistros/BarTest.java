@@ -7,7 +7,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class BarTest {
-/*
+
 
     @Test
     void createBarTest(){
@@ -17,6 +17,7 @@ class BarTest {
         assertEquals(13,bar.getAddress().getNumber());
         assertTrue(bar.getMenu().isEmpty());
     }
+
 
     @Test
     void getNameTest(){
@@ -46,5 +47,5 @@ class BarTest {
     }
 
 
- */
+
 }

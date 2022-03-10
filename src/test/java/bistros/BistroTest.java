@@ -7,7 +7,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class BistroTest {
-/*
+
     @Test
     void createBistroTest() {
         Bistro bistro = new Bistro("Best Bistro", new Address("Kossuth", 17));
@@ -18,7 +18,7 @@ class BistroTest {
         assertTrue(bistro.getMenu().isEmpty());
     }
 
-
+/*
     @Test
     void addMenuItemTest() {
         Bistro bistro = new Bistro("Best Bistro", new Address("Kossuth", 17));
