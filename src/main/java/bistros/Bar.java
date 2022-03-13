@@ -7,7 +7,7 @@ public class Bar extends Bistro {
 
     // private String name;
     // private Address address;
-    private List<MenuItem> menuItems = new ArrayList<>();
+    // private List<MenuItem> menuItems = new ArrayList<>();
 
     public Bar(String name, Address address) {
         super(name, address);
@@ -21,16 +21,13 @@ public class Bar extends Bistro {
         return address;
     }
 
-    @Override
-    public List<MenuItem> getMenu() {
-        return menuItems;
-    }
+
 
 
     @Override
     public void addMenuItem(MenuItem menuItem) {
         if (menuItem.getType() == MenuItemType.DRINK) {
-            menuItems.add(menuItem);
+            super.addMenuItem(menuItem);
         } else {
             throw new IllegalArgumentException("Only drink can be added to menu!");
         }

@@ -8,7 +8,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CityTest {
-/*
+
     City city = new City();
 
     @BeforeEach
@@ -57,6 +57,7 @@ class CityTest {
 
     }
 
+
     @Test
     void addBistroToCityTest(){
         City city = new City();
@@ -79,11 +80,11 @@ class CityTest {
         assertEquals("Cool bistro", city.findBistroByAddress(new Address("Rákóczi",18)).getName());
         assertEquals("Best bar (Only Drinks)", city.findBistroByAddress(new Address("Kossuth",19)).getName());
     }
-
     @Test
     void testFindLongestMenu(){
         assertEquals("Best bistro",city.findLongestMenu().getName());
     }
+
 
     @Test
     void testFindBistroWithMenuItem(){
@@ -94,5 +95,4 @@ class CityTest {
     }
 
 
- */
 }

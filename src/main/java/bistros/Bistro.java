@@ -38,11 +38,20 @@ public class Bistro {
         if (this == o) return true;
         if (!(o instanceof Bistro)) return false;
         Bistro bistro = (Bistro) o;
-        return Objects.equals(name, bistro.name) && Objects.equals(address, bistro.address);
+        return name.equals(bistro.name) && address.equals(bistro.address);
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(name, address);
+    }
+
+    @Override
+    public String toString() {
+        return "Bistro{" +
+                "name='" + name + '\'' +
+                ", address=" + address +
+                ", menuItems=" + menuItems +
+                '}';
     }
 }

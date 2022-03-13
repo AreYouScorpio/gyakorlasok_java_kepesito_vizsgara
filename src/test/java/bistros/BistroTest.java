@@ -33,7 +33,6 @@ class BistroTest {
     void testBistroEquals() {
         Bistro bistro = new Bistro("Best Bistro", new Address("Kossuth", 17));
         Bistro bistro1 = new Bistro("Best Bistro", new Address("Kossuth", 17));
-
         assertTrue(bistro.equals(bistro1));
         bistro1 = new Bistro("Best Bistro", new Address("Deák", 17));
 

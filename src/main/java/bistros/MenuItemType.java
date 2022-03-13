@@ -9,4 +9,9 @@ public enum MenuItemType {
     private MenuItemType(int tax) {
         this.tax = tax;
     }
+
+
+    public int getTax() {
+        return tax;
+    }
 }
