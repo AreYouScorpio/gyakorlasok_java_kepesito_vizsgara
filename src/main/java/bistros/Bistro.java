@@ -33,6 +33,12 @@ public class Bistro {
         menuItems.add(menuItem);
     }
 
+    public boolean isThereAnyItemInMenuItems(String menuItemsName){
+        return menuItems.stream().anyMatch(a->a.getName().contains(menuItemsName));
+        // tanári megoldásban equals volt
+    }
+
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

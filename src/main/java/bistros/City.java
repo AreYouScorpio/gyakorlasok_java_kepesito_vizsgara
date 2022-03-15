@@ -3,7 +3,7 @@ package bistros;
 import java.util.*;
 
 public class City {
-    private Set<Bistro> bistros = new HashSet<Bistro>();
+    private Set<Bistro> bistros = new LinkedHashSet<>();
 
 
 
@@ -37,14 +37,22 @@ public class City {
 
     // streammel:
     public Bistro findLongestMenu(){
-        return bistros.stream().
-                sorted(Comparator.comparingInt((Bistro b) -> b.getMenu().size()).reversed()).
-                findFirst().get();
+        return bistros.stream().sorted(Comparator.comparingInt((Bistro a)->a.getMenu().size()).reversed()).findFirst().get();
+
     }
 
-    public List<Bistro> findBistroWithMenuItem(String menuItemName){
+    /*
+    komplex megoldás kiszervezés nélkül, de ki kell szervezni inkább:
+
+     public List<Bistro> findBistroWithMenuItem(String menuItemName){
         return bistros.stream().
                 filter( b-> b.getMenu().stream().anyMatch(c->c.getName().equals(menuItemName))).
                 toList();
+
+     */
+
+    public List<Bistro> findBistroWithMenuItem(String menuItemName){
+
+        return bistros.stream().filter(b->b.isThereAnyItemInMenuItems(menuItemName)).toList();
     }
 }
