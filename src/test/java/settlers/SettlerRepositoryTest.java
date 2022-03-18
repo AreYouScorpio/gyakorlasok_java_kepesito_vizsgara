@@ -11,7 +11,7 @@ import java.sql.SQLException;
 import static org.junit.jupiter.api.Assertions.*;
 
 class SettlerRepositoryTest {
-/*
+
     SettlerRepository settlerRepository;
     MariaDbDataSource dataSource;
 
@@ -21,7 +21,7 @@ class SettlerRepositoryTest {
             dataSource = new MariaDbDataSource();
             dataSource.setUrl("jdbc:mariadb://localhost:3306/exam-test?useUnicode=true");
             dataSource.setUser("root");
-            dataSource.setPassword("training");
+            dataSource.setPassword("root");
         } catch (SQLException sqle) {
             throw new IllegalStateException("Cannot connect to database", sqle);
         }
@@ -59,6 +59,7 @@ class SettlerRepositoryTest {
         assertEquals(25_000, expected.getExpectedIncome());
     }
 
+
     @Test
     void testUpdateGrowthAndIncome() {
         settlerRepository.updateGrowthAndIncome(2, 40);
@@ -69,5 +70,5 @@ class SettlerRepositoryTest {
         assertEquals(5_000, expected.getExpectedIncome());
     }
 
- */
+
 }
