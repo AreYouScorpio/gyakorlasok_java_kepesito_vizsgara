@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ArmstrongNumbers {
 
-    private         List<Character> arrayOfNumbers = new ArrayList<>();
+    private  List<Character> arrayOfNumbers = new ArrayList<>();
 
 
     public int howLongIsTheNumber(int number){
